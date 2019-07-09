@@ -1,7 +1,10 @@
-import createHistory from 'history/createBrowserHistory';
+//import createHistory from 'history/createBrowserHistory';
+
+import { createBrowserHistory } from 'history'
 import { toQueryParams } from './http-util';
 
-const history = createHistory();
+//const history = createHistory();
+const history = createBrowserHistory();
 const shove = history.push;
 
 history.push = params => {
